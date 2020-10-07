@@ -6,8 +6,8 @@ This includes support for TP-Link Smart Switches HS100/105/110 as well as TP-Lin
 
 ## Usage
 ### Discovery
-	// Runs in a Task<List<TPLinkSmartDevice>>
-	var discoveredDevices = new TPLinkSmartDevices.TPLinkDiscovery().Discover().Result;
+	// Runs in a Task<List<TPLinkSmartDevice>> in an async function:
+	var discoveredDevices = await new TPLinkSmartDevices.TPLinkDiscovery().Discover();
 
 
 ### Basic Usage
